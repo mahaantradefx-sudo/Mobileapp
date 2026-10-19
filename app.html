@@ -803,7 +803,7 @@ function draw(){
 }
 function buildDl(){document.getElementById('dl').innerHTML=(S.short?SH:CAN).map(function(z){return '<option value="'+z+'">'}).join('')}
 function applyVars(){var wa=document.getElementById('woauto');if(wa)wa.checked=S.woAuto!==false;var ma=document.getElementById('moauto');if(ma)ma.checked=S.moAuto===true;var r=document.documentElement.style;r.setProperty('--cw',(S.short?40:(S.cw||72))+'px');r.setProperty('--fs',(S.short?11:12)+'px');r.setProperty('--nw',(S.nw||160)+'px');document.body.classList.toggle('short',!!S.short);document.getElementById('shb').classList.toggle('on',!!S.short)}
-var OTA_URL='https://raw.githubusercontent.com/mahaantradefx-sudo/DutyApp-/main/index.html';
+var OTA_URL='https://raw.githubusercontent.com/mahaantradefx-sudo/Mobileapp/main/index.html';
 async function updateApp(){
   try{
     toast('Update check pannuren... (v'+APP_VER+')');
@@ -1110,7 +1110,7 @@ async function exportPdf(){
   await saveFile(fname('pdf'),doc.output('arraybuffer'));
 }
 /* ---------- palette ---------- */
-var APPV='20261020-0430',UPDATE_URL='https://raw.githubusercontent.com/mahaantradefx-sudo/DutyApp-/main/app.html';
+var APPV='20261020-0430',UPDATE_URL='https://raw.githubusercontent.com/mahaantradefx-sudo/Mobileapp/main/app.html';
 function reloadApp(){if(isNative())location.href=new URL('index.html',location.href).href;else location.reload()}
 async function updateApp(){
   if(!isNative()){alert('Idhu APK app-la mattum velai seiyum. Web link-la eppavume latest dhaan.');return}
